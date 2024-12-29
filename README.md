@@ -68,11 +68,12 @@ dd01a35078 Update CHANGELOG.md
 225466bc3e Cleanup after v0.12.23 release
 ```
 ## 5. Найдите коммит, в котором была создана функция func providerSource, её определение в коде выглядит так: func providerSource(...) (вместо троеточия перечислены аргументы).
-### Чтобы найти коммит, в котором была создана функция func providerSource выполним команду:
+### Чтобы найти коммит, в котором была создана функция func providerSource, выполним команду:
 ```
 git log -S "func providerSource" --oneline
 ```
 <img src = "img/07.png" width = 100%>
+Результат выполнения:
 
 ```
 git log -S "func providerSource" --oneline
@@ -80,4 +81,23 @@ git log -S "func providerSource" --oneline
 8c928e8358 main: Consult local directories as potential mirrors of providers
 ```
 
+---
+## 6. Найдите все коммиты, в которых была изменена функция globalPluginDirs.
+### Чтобы найти коммит, в которых была изменена функция globalPluginDirs, выполним команду:
+```
+git log -S "globalPluginDirs" --oneline
+```
+<img src = "img/08.png" width = 100%>
+```
+Результат выполнения:
 
+```
+7c4aeac5f3 stacks: load credentials from config file on startup (#35952)
+65c4ba7363 Remove terraform binary
+125eb51dc4 Remove accidentally-committed binary
+22c121df86 Bump compatibility version to 1.3.0 for terraform core release (#30988)
+7c7e5d8f0a Don't show data while input if sensitive
+35a058fb3d main: configure credentials from the CLI config file
+c0b1761096 prevent log output during init
+8364383c35 Push plugin discovery down into command package
+```
