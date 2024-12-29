@@ -88,7 +88,6 @@ git log -S "func providerSource" --oneline
 git log -S "globalPluginDirs" --oneline
 ```
 <img src = "img/08.png" width = 100%>
-```
 Результат выполнения:
 
 ```
@@ -100,4 +99,17 @@ git log -S "globalPluginDirs" --oneline
 35a058fb3d main: configure credentials from the CLI config file
 c0b1761096 prevent log output during init
 8364383c35 Push plugin discovery down into command package
+```
+---
+## 7. Кто автор функции synchronizedWriters?
+### Чтобы узнать, кто автор функции synchronizedWriters, выполним команду:
+```
+git log -S "func synchronizedWriters" --pretty=format:"%h %an"
+```
+<img src = "img/09.png" width = 100%>
+Результат выполнения:
+
+```
+bdfea50cc8 James Bardin
+5ac311e2a9 Martin Atkins
 ```
