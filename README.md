@@ -54,6 +54,7 @@ git log v0.12.23..v0.12.24 --oneline
 ```
 <img src = "img/06.png" width = 100%>
 Результат выполнения:
+
 ```
 33ff1c03bb (tag: v0.12.24) v0.12.24
 b14b74c493 [Website] vmc provider links
