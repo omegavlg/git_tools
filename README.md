@@ -67,4 +67,17 @@ d5f9411f51 command: Fix bug when using terraform login on Windows
 dd01a35078 Update CHANGELOG.md
 225466bc3e Cleanup after v0.12.23 release
 ```
+## 5. Найдите коммит, в котором была создана функция func providerSource, её определение в коде выглядит так: func providerSource(...) (вместо троеточия перечислены аргументы).
+### Чтобы найти коммит, в котором была создана функция func providerSource выполним команду:
+```
+git log -S "func providerSource" --oneline
+```
+<img src = "img/07.png" width = 100%>
+
+```
+git log -S "func providerSource" --oneline
+5af1e6234a main: Honor explicit provider_installation CLI config when present
+8c928e8358 main: Consult local directories as potential mirrors of providers
+```
+
 
